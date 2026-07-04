@@ -70,7 +70,7 @@ function App() {
     setReview('');
     setErrorToast(null);
     try {
-      const response = await axios.post('http://code-review-backend-a3ig.onrender.com/ai/get-review', { code });
+      const response = await axios.post('https://code-review-backend-a3ig.onrender.com/ai/get-review', { code });
       setReview(response.data);
     } catch (err) {
       console.error(err);
