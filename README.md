@@ -1,8 +1,15 @@
 # ✨ Aura Reviewer: AI-Powered Code Review Dashboard
 
-Aura Reviewer is a modern, high-fidelity web application that provides real-time AI-powered code reviews. Developers can paste JavaScript or React snippets into an interactive editor and receive feedback from an automated "Senior Software Engineer" AI reviewer.
+Aura Reviewer is a modern, high-fidelity web application that provides real-time AI-powered code reviews. Developers can paste JavaScript or React snippets into an interactive editor and receive feedback from an automated **Senior Software Engineer** AI reviewer.
 
 The application automatically checks for critical bugs, security vulnerabilities (like SQL injection or memory leaks), performance issues, and general code quality, returning structured feedback along with drop-in code fixes.
+
+---
+
+## 🌐 Live Demo
+
+🚀 **Link:** https://code-review-zu8d.onrender.com/
+
 
 ---
 
@@ -41,46 +48,64 @@ The application automatically checks for critical bugs, security vulnerabilities
 
 ## ⚙️ Setup and Installation
 
-Follow these steps to run the application locally:
+Follow these steps to run the application locally.
 
 ### 1. Prerequisites
-- [Node.js](https://nodejs.org/) installed on your machine.
-- A Gemini API Key. You can get one from the [Google AI Studio](https://aistudio.google.com/).
+
+- Node.js installed on your machine.
+- A Gemini API Key from Google AI Studio.
 
 ### 2. Backend Setup
-1. Open your terminal and navigate to the `BackEnd` directory:
-   ```bash
-   cd BackEnd
-   ```
-2. Install the backend dependencies:
-   ```bash
-   npm install
-   ```
-3. Create your environment configuration file:
-   - Copy or rename `.env.example` to `.env`.
-   - Open `.env` and paste your Google Gemini API Key:
-     ```env
-     GOOGLE_GEMINI_KEY=your_gemini_api_key_here
-     ```
-4. Start the backend server (runs on `http://localhost:3000` by default):
-   ```bash
-   node server.js
-   ```
+
+Navigate to the backend directory:
+
+```bash
+cd BackEnd
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file:
+
+```env
+GOOGLE_GEMINI_KEY=your_gemini_api_key_here
+```
+
+Start the backend server:
+
+```bash
+node server.js
+```
+
+The backend runs on **http://localhost:3000** by default.
+
+---
 
 ### 3. Frontend Setup
-1. In a new terminal window, navigate to the `Frontend` directory:
-   ```bash
-   cd Frontend
-   ```
-2. Install the frontend dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the Vite development server:
-   ```bash
-   npm run dev
-   ```
-4. Open the displayed local address (usually `http://localhost:5173`) in your browser to start using Aura Reviewer!
+
+Navigate to the frontend directory:
+
+```bash
+cd Frontend
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the Vite development server:
+
+```bash
+npm run dev
+```
+
+Open the displayed local address (usually **http://localhost:5173**) in your browser.
 
 ---
 
@@ -92,21 +117,40 @@ code-review/
 │   ├── src/
 │   │   ├── controllers/
 │   │   ├── routes/
-│   │   └── services/       # Contains Gemini AI configurations & system instructions
-│   ├── .env.example        # Template for env variables
-│   ├── server.js           # Server startup script
+│   │   └── services/       # Gemini AI configuration & system instructions
+│   ├── .env.example
+│   ├── server.js
 │   └── package.json
 ├── Frontend/
 │   ├── src/
-│   │   ├── App.jsx         # Main App dashboard logic
-│   │   ├── App.css         # Custom dark-theme / glassmorphic styles
+│   │   ├── App.jsx
+│   │   ├── App.css
 │   │   └── main.jsx
 │   ├── index.html
 │   ├── vite.config.js
 │   └── package.json
-├── .gitignore              # Tells Git what to ignore (node_modules, .env secrets)
-└── README.md               # You are here!
+├── .gitignore
+└── README.md
 ```
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+⭐ If you found this project useful, consider giving it a **star** on GitHub!
